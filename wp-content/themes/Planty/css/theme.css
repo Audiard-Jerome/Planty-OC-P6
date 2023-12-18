@@ -1,5 +1,7 @@
 /* Font */ 
-@import url('https://fonts.googleapis.com/css2?family=Libre+Baskerville:wght@600&family=Syne&display=swap');
+
+@import url('https://fonts.googleapis.com/css2?family=Syne:wght@400;500;600;700;800&display=swap');
+
 a,
 body {
    font-family: 'Syne', sans-serif;
@@ -104,3 +106,32 @@ footer a:hoover {
     text-decoration: none;
 }
 
+/* main */
+
+h2 {
+    font-weight: 800;
+}
+
+h3 {
+    font-weight: 700;
+}
+
+p {
+    font-weight: 400;
+}
+
+.entry-content {
+    background: white;
+    display: flex;
+    flex-direction: column;
+}
+
+.hero-img {
+    clip-path: ellipse(120% 80% at 50% 20%);
+    background: #DC9F96;
+    border-bottom: 5px solid red;
+}
+
+.white-bg {
+    background: white;
+}
