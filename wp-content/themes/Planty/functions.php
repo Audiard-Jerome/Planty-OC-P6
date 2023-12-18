@@ -34,9 +34,7 @@ add_action( 'after_setup_theme', 'planty_menu' );
 
 // custom logo on login page
 function wpdev_filter_login_head() {
-
 	if ( has_custom_logo() ) :
-
 		$image = wp_get_attachment_image_src( get_theme_mod( 'custom_logo' ), 'full' );
 		?>
 		<style type="text/css">
@@ -53,4 +51,14 @@ function wpdev_filter_login_head() {
 }
 
 add_action( 'login_head', 'wpdev_filter_login_head', 100 );
+
+// admin link
+
+function add_admin_link($items, $args) {
+	if( is_user_logged_in() && current_user_can('manage_options') && $args->theme_location == 'header_menu' ){
+	$items .= '<li><a href="' . admin_url() . '">admin</a></li>';
+	}
+  return $items;
+}
+add_filter('wp_nav_menu_items', 'add_admin_link', 10, 2);
 

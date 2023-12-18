@@ -27,6 +27,10 @@ nav {
     flex-direction: row;
 }
 
+nav :nth-child(2) { 
+    order: 3; 
+}
+
 header a {
     display: flex;
     justify-content: center;
