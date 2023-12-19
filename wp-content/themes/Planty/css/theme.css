@@ -55,6 +55,7 @@ header a:hover {
     font-size: 13px;
     font-weight: 700;
     text-decoration: none;
+    background: #C02E44;
 }
 
 header .menu-item-19 a {
@@ -126,10 +127,28 @@ p {
     flex-direction: column;
 }
 
-.hero-img {
-    clip-path: ellipse(120% 80% at 50% 20%);
+/*
+.elipse {
+    clip-path: ellipse(80% 50% at 50% 20%);
     background: #DC9F96;
-    border-bottom: 5px solid red;
+    height: 100px;
+    width: 100%;
+    border: none;
+}
+
+.elipse2 {
+    clip-path: ellipse(80% 50% at 50% 20%);
+    background: red;
+    height: 100px;
+    width: 100%;
+    border: none;
+}
+
+*/
+
+.hero-img {
+    background: #ece2da;
+    clip-path: ellipse(120% 80% at 50% 20%);
 }
 
 .white-bg {

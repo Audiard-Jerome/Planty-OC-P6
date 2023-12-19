@@ -34,6 +34,16 @@
                     "slug": "txt_rose",
                     "color": "#D2776A",
                     "name": "txt_pink"
+                },
+                {
+                    "slug": "white",
+                    "color": "#FFFFFF",
+                    "name": "white"
+                },
+                {
+                    "slug": "black",
+                    "color": "#000000",
+                    "name": "black"
                 }
             ],
             "text": true, 
