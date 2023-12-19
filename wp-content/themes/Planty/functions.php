@@ -62,5 +62,22 @@ function add_admin_link($items, $args) {
 }
 add_filter('wp_nav_menu_items', 'add_admin_link', 10, 2);
 
+// Déclarer un bloc Gutenberg avec ACF
+function planty_register_acf_block_types() {
 
+    acf_register_block_type( array(
+        'name'              => 'temoignage',
+        'title'             => 'Extension',
+        'description'       => "Présentation d'un temoignage",
+        'render_template'   => 'blocks/temoignage.php',
+        'category'          => 'formatting', 
+        'icon'              => 'businessperson', 
+        'keywords'          => array( 'plugin', 'extension', 'add-on' ),
+        'enqueue_assets'    => function() {
+        	wp_enqueue_style( 'planty-style', get_stylesheet_directory_uri() . '/css/blocks.css');
+        }
+    ) );
+}
+
+add_action( 'acf/init', 'planty_register_acf_block_types' );
 

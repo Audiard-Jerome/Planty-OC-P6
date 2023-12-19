@@ -66,8 +66,14 @@ header .btn_commander a {
     color: white;
 }
 
+
 header .btn_commander a:hover {
     background: #C02E44;
+}
+
+
+header .logo a:hover {
+    background: none;
 }
 
 .logo {
