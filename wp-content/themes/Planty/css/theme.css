@@ -58,7 +58,7 @@ header a:hover {
     background: #C02E44;
 }
 
-header .menu-item-19 a {
+header .btn_commander a {
     background: #DC9F96;
     font-size: 16px;
     font-weight: 400;
@@ -66,7 +66,7 @@ header .menu-item-19 a {
     color: white;
 }
 
-header .menu-item-19 a:hover {
+header .btn_commander a:hover {
     background: #C02E44;
 }
 
