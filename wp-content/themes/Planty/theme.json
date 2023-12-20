@@ -1,55 +1,100 @@
 {
-"$schema": "https://schemas.wp.org/wp/6.4/theme.json",
-"version": 2,
+    "$schema": "https://schemas.wp.org/wp/6.4/theme.json",
+    "version": 2,
     "settings": {
-        "color": { 
-            "custom": true, 
-            "customDuotone": false,
-            "customGradient": false, 
-            "duotone": [], 
-            "gradients": [],
-            "link": false,
-            "palette": [  
-                {
-                    "slug": "pink",
-                    "color": "#DC9F96",
-                    "name": "pink"
-                },
-                {
-                    "slug": "red",
-                    "color": "#C02E44",
-                    "name": "red"
-                },
-                {
-                    "slug": "pink-BG",
-                    "color": "#ECE2DA",
-                    "name": "rose-bg"
-                },                
-                {
-                    "slug": "txt-green",
-                    "color": "#3B8E46",
-                    "name": "txt-green"
-                },                
-                {
-                    "slug": "txt_rose",
-                    "color": "#D2776A",
-                    "name": "txt_pink"
-                },
-                {
-                    "slug": "white",
-                    "color": "#FFFFFF",
-                    "name": "white"
-                },
-                {
-                    "slug": "black",
-                    "color": "#000000",
-                    "name": "black"
-                }
-            ],
-            "text": true, 
-            "background": true, 
-            "defaultGradients": false, 
-            "defaultPalette": false
-        }
+      "appearanceTools": true,
+      "useRootPaddingAwareAlignments": true,
+      "color": {
+        "custom": false,
+        "defaultPalette": false,
+        "defaultGradients": false,
+        "palette": [
+          {
+            "slug": "black",
+            "color": "#000000",
+            "name": "Black"
+          },
+          {
+            "slug": "white",
+            "color": "#FFFFFF",
+            "name": "White"
+          },
+          {
+            "slug": "pink",
+            "color": "#DC9F96",
+            "name": "Pink"
+          },
+          {
+            "slug": "red",
+            "color": "#C02E44",
+            "name": "Red"
+          },
+          {
+            "slug": "pinkbg",
+            "color": "#ECE2DA",
+            "name": "Pinkbg"
+          },
+          {
+            "slug": "green",
+            "color": "#3B8E46",
+            "name": "Green"
+          },
+          {
+            "slug": "pink",
+            "color": "#D2776A",
+            "name": "Pink"
+          }
+        ]
+      },
+      "typography": {
+        "fontSizes": [
+          {
+            "slug": "smal",
+            "size": "16px",
+            "name": "Smal"
+          },
+          {
+            "slug": "medium",
+            "size": "20px",
+            "name": "Medium"
+          },
+          {
+            "slug": "large",
+            "size": "30px",
+            "name": "Large"
+          },
+          {
+            "slug": "xl",
+            "size": "38px",
+            "name": "Xl"
+          }
+        ],
+        "fontFamilies": [
+          {
+            "fontFace": [
+            {
+               "fontFamily": "syne",
+               "fontStretch": "normal",
+               "fontStyle": "normal",
+               "fontWeight": "400 500 600 700 800",
+               "src": [
+                   "file:./assets/font/Syne-VariableFont_wght.ttf"
+               ]
+            }
+         ],
+            "fontFamily": "syne",
+            "slug": "syne",
+            "name": "Syne"
+          }
+        ]
+        
+      },
+      "spacing": {
+        "blockGap": true,
+        "margin": true,
+        "padding": true
+      }
     }
-}
+  }
+  
+  

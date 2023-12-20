@@ -81,3 +81,18 @@ function planty_register_acf_block_types() {
 
 add_action( 'acf/init', 'planty_register_acf_block_types' );
 
+// import font
+
+/**
+ * Enqueue Google Fonts
+ *
+ * @return void
+ */
+
+ /*
+function enqueue_my_google_fonts() : void {
+	wp_enqueue_style( 'my_theme_font', 'https://fonts.googleapis.com/css2?family=Syne:ital,wght@0,400;0,500;0,600;0,700;0,800&display=swap', [] );
+}
+add_action( 'wp_enqueue_scripts', 'enqueue_my_google_fonts' );
+
+*/
