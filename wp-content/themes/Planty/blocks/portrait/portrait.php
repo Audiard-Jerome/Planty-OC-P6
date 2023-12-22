@@ -11,7 +11,7 @@
 <div class="acf__portrait">
         <?php 
         $image = get_field('image');
-            $size = array('126', '139'); 
+            $size = array('167', '167'); 
             if( $image ) {
                 echo wp_get_attachment_image( $image, $size );
                 }
