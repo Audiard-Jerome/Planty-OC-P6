@@ -43,6 +43,11 @@
             "slug": "pink",
             "color": "#D2776A",
             "name": "Pink"
+          },
+          {
+            "slug": "pinkbtn",
+            "color": "#E0B9B4",
+            "name": "Pinkbtn"
           }
         ]
       },

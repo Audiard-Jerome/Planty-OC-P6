@@ -1,0 +1,16 @@
+{
+    "name": "acf/temoignage",
+    "title": "temoignage",
+    "description": "Temoignage planty",
+    "style": [ "file:./temoignage.css" ],
+    "category": "formatting",
+    "icon": "admin-comments",
+    "keywords": ["temoignage", "planty"],
+    "acf": {
+        "mode": "preview",
+        "renderTemplate": "temoignage.php"
+    },
+    "supports": {
+        "anchor": true
+    }
+}

@@ -1,0 +1,39 @@
+.acf__temoignage {
+    display:flex;
+    flex-direction:row;
+    gap:20px;
+}
+
+.acf__image {
+    width:126px;
+    height:139px;
+}
+
+.acf__image img{
+    object-fit: contain;
+}
+
+.acf__txt_column {
+    display:flex;
+    flex-direction:column;
+    width:196px;
+    justify-content: space-evenly;
+}
+
+.acf__author {
+    color: #3B8E46;
+    font-family: Syne;
+    font-size: 30px;
+    font-style: normal;
+    font-weight: 700;
+    line-height: normal;
+}
+
+.acf__quote {
+    color: #000;
+    font-family: Syne;
+    font-size: 16px;
+    font-style: normal;
+    font-weight: 400;
+    line-height: normal;
+}

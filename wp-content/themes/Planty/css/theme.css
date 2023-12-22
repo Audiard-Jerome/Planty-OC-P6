@@ -117,18 +117,6 @@ footer a:hoover {
 
 /* main */
 
-h2 {
-    font-weight: 800;
-}
-
-h3 {
-    font-weight: 700;
-}
-
-p {
-    font-weight: 400;
-}
-
 .entry-content {
     background: white;
     display: flex;
@@ -162,3 +150,4 @@ p {
 .white-bg {
     background: white;
 }
+

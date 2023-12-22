@@ -62,37 +62,18 @@ function add_admin_link($items, $args) {
 }
 add_filter('wp_nav_menu_items', 'add_admin_link', 10, 2);
 
-// Déclarer un bloc Gutenberg avec ACF
-function planty_register_acf_block_types() {
 
-    acf_register_block_type( array(
-        'name'              => 'temoignage',
-        'title'             => 'Extension',
-        'description'       => "Présentation d'un temoignage",
-        'render_template'   => 'blocks/temoignage.php',
-        'category'          => 'formatting', 
-        'icon'              => 'businessperson', 
-        'keywords'          => array( 'plugin', 'extension', 'add-on' ),
-        'enqueue_assets'    => function() {
-        	wp_enqueue_style( 'planty-style', get_stylesheet_directory_uri() . '/css/blocks.css');
-        }
-    ) );
-}
-
-add_action( 'acf/init', 'planty_register_acf_block_types' );
-
-// import font
 
 /**
- * Enqueue Google Fonts
+ * We use WordPress's init hook to make sure
+ * our blocks are registered early in the loading
+ * process.
  *
- * @return void
+ * @link https://developer.wordpress.org/reference/hooks/init/
  */
+function planty_register_acf_blocks() {
 
- /*
-function enqueue_my_google_fonts() : void {
-	wp_enqueue_style( 'my_theme_font', 'https://fonts.googleapis.com/css2?family=Syne:ital,wght@0,400;0,500;0,600;0,700;0,800&display=swap', [] );
+    register_block_type( __DIR__ . '/blocks/temoignage' );
 }
-add_action( 'wp_enqueue_scripts', 'enqueue_my_google_fonts' );
 
-*/
+add_action( 'init', 'planty_register_acf_blocks' );
