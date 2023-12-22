@@ -1,0 +1,16 @@
+{
+    "name": "acf/portrait",
+    "title": "portrait",
+    "description": "Portrait planty",
+    "style": [ "file:./portrait.css" ],
+    "category": "formatting",
+    "icon": "admin-comments",
+    "keywords": ["portrait", "planty"],
+    "acf": {
+        "mode": "preview",
+        "renderTemplate": "portrait.php"
+    },
+    "supports": {
+        "anchor": true
+    }
+}

@@ -1,0 +1,25 @@
+.acf__portrait {
+    display:flex;
+    flex-direction:column;
+    justify-content: space-evenly;
+}
+
+.acf__name {
+    color: #000;
+    text-align: center;
+    font-family: Syne;
+    font-size: 20px;
+    font-style: normal;
+    font-weight: 700;
+    line-height: normal;
+}
+
+.acf__job {
+    color: #000;
+    text-align: center;
+    font-family: Syne;
+    font-size: 20px;
+    font-style: normal;
+    font-weight: 400;
+    line-height: normal;
+}

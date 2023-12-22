@@ -1,49 +1,9 @@
 {
-    "key": "group_65854c85cf23e",
-    "title": "Bloc : témoignage",
+    "key": "group_658562e37f90f",
+    "title": "Bloc : Portrait",
     "fields": [
         {
-            "key": "field_65854c89e65a9",
-            "label": "Témoin",
-            "name": "author",
-            "aria-label": "",
-            "type": "text",
-            "instructions": "",
-            "required": 0,
-            "conditional_logic": 0,
-            "wrapper": {
-                "width": "",
-                "class": "",
-                "id": ""
-            },
-            "default_value": "",
-            "maxlength": "",
-            "placeholder": "",
-            "prepend": "",
-            "append": ""
-        },
-        {
-            "key": "field_65854cb7e65aa",
-            "label": "Temoignage",
-            "name": "quote",
-            "aria-label": "",
-            "type": "textarea",
-            "instructions": "",
-            "required": 0,
-            "conditional_logic": 0,
-            "wrapper": {
-                "width": "",
-                "class": "",
-                "id": ""
-            },
-            "default_value": "",
-            "maxlength": "",
-            "rows": "",
-            "placeholder": "",
-            "new_lines": ""
-        },
-        {
-            "key": "field_65854ccde65ab",
+            "key": "field_658562e6fdaa7",
             "label": "Photo",
             "name": "image",
             "aria-label": "",
@@ -66,6 +26,46 @@
             "max_size": "",
             "mime_types": "",
             "preview_size": "medium"
+        },
+        {
+            "key": "field_65856300fdaa8",
+            "label": "Nom",
+            "name": "name",
+            "aria-label": "",
+            "type": "text",
+            "instructions": "",
+            "required": 0,
+            "conditional_logic": 0,
+            "wrapper": {
+                "width": "",
+                "class": "",
+                "id": ""
+            },
+            "default_value": "",
+            "maxlength": "",
+            "placeholder": "",
+            "prepend": "",
+            "append": ""
+        },
+        {
+            "key": "field_65856322fdaa9",
+            "label": "Fonction",
+            "name": "job",
+            "aria-label": "",
+            "type": "text",
+            "instructions": "",
+            "required": 0,
+            "conditional_logic": 0,
+            "wrapper": {
+                "width": "",
+                "class": "",
+                "id": ""
+            },
+            "default_value": "",
+            "maxlength": "",
+            "placeholder": "",
+            "prepend": "",
+            "append": ""
         }
     ],
     "location": [
@@ -73,7 +73,7 @@
             {
                 "param": "block",
                 "operator": "==",
-                "value": "acf\/temoignage"
+                "value": "acf\/portrait"
             }
         ]
     ],
@@ -86,5 +86,5 @@
     "active": true,
     "description": "",
     "show_in_rest": 0,
-    "modified": 1703236763
+    "modified": 1703241029
 }
