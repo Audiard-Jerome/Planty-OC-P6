@@ -4,12 +4,10 @@
 
 */
 body{
-    max-width: 1440px;
     width: 100%;
     display: flex;
     flex-direction: column;
     flex-wrap: wrap;
-    align-content: stretch;
 }
 
 a,
@@ -28,6 +26,7 @@ header{
     align-items: center;
     padding: 0;
     margin: 0;
+    background: white;
 }
 
 ul, li{
@@ -99,6 +98,7 @@ footer{
     justify-content: center;
     align-items: center;
     height: 60px;
+    background: white;
 }
 
 footer a{
@@ -131,10 +131,17 @@ background: #ece2da;
     padding-bottom: 60px;
 */
 
-
-
-.pink-bg{
+.page-id-13{
     background-color: #ece2da;
+}
+
+.hero-img{
+    margin-top: 105px;
+}
+
+.hero-img img{
+    margin-top: 80px;
+    margin-bottom: 50px;
 }
 
 .energy{
@@ -150,8 +157,13 @@ background: #ece2da;
     height: 425px;
     display: flex;
     flex-direction: column;
-    justify-content: center;
-    align-content: center;
+    gap: 40px;
+    padding-top: 140px;
+}
+
+.energy p{
+    width: 497px;
+    padding: 30px;
 }
 
 .planty-txt{
@@ -164,8 +176,11 @@ background: #ece2da;
 }
 
 .gouts-groupe{
-    padding: 60px;
-    background: #ece2da;
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+    padding-top: 40px;
+    padding-bottom: 20px;
 }
 
 .saveur{
@@ -179,16 +194,43 @@ background: #ece2da;
 }
 
 .button{
-    padding-top : 30px;
-    padding-bottom: 30px;
-    background: #ece2da;
+    padding-top : 15px;
+    padding-bottom: 15px;
+    padding-bottom: 60px;
+}
+
+.button a{
+    display: flex;
+    justify-content: center;
+    align-content: center;
+    flex-wrap: wrap;
+    width: 198px;
+    height: 55px;
+} 
+
+/* elipse 
+.group-gouts{
+    background: white;
+    clip-path: ellipse(120% 80% at 50% 20%);
+}
+
+*/ 
+
+.group-temoignage{
+    display: flex;
+    flex-direction: column;
+    background-color: white;
+}
+
+.group-temoignage h3{
+    padding-top:130px;
+    padding-bottom: 80px;
 }
 
 .temoignage{
     display: flex;
     justify-content: center;
-    margin-top: 80px;
-    margin-bottom: 80px;
+    padding-bottom: 100px;
 }
 
 /* backgroung canette */
