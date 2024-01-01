@@ -22,5 +22,4 @@
         <div class="acf__job">
             <?php echo wp_kses_post ( get_field('job') ); ?>
         </div>    
-    </div>    
-</div>
+</div>    

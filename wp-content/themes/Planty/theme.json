@@ -95,9 +95,9 @@
         
       },
       "spacing": {
-        "blockGap": true,
-        "margin": true,
-        "padding": true
+        "blockGap": false,
+        "margin": false,
+        "padding": false
       }
     }
   }

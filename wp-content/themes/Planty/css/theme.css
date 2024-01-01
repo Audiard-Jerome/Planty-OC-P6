@@ -3,16 +3,24 @@
 @import url('https://fonts.googleapis.com/css2?family=Syne:wght@400;500;600;700;800&display=swap');
 
 */
+body{
+    max-width: 1440px;
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    flex-wrap: wrap;
+    align-content: stretch;
+}
 
 a,
-body {
+body{
    font-family: 'Syne', sans-serif;
    margin: 0;
 }
 
 /* Header */
 
-header {
+header{
     display: flex;
     flex-direction: row;
     height: 80px;
@@ -22,7 +30,7 @@ header {
     margin: 0;
 }
 
-ul, li {
+ul, li{
     list-style-type: none;
   }
 
@@ -31,11 +39,11 @@ nav {
     flex-direction: row;
 }
 
-nav :nth-child(2) { 
+nav :nth-child(2){ 
     order: 3; 
 }
 
-header a {
+header #menu a{
     display: flex;
     justify-content: center;
     align-items: center;
@@ -50,7 +58,7 @@ header a {
     font-weight: 400;
 }
 
-header a:hover {
+header #menu a:hover{
     text-decoration: none;
     color: black;
     font-family: Syne;
@@ -60,7 +68,7 @@ header a:hover {
     background: #C02E44;
 }
 
-header .btn_commander a {
+header #menu .btn_commander a{
     background: #DC9F96;
     font-size: 16px;
     font-weight: 400;
@@ -69,16 +77,16 @@ header .btn_commander a {
 }
 
 
-header .btn_commander a:hover {
+header #menu .btn_commander a:hover{
     background: #C02E44;
 }
 
 
-header .logo a:hover {
+header .logo a:hover{
     background: none;
 }
 
-.logo {
+.logo{
     display: flex;
     flex-direction: row;
     margin-left: 37px;
@@ -86,14 +94,14 @@ header .logo a:hover {
 
 /* footer */
 
-footer {
+footer{
     display:flex;
     justify-content: center;
     align-items: center;
     height: 60px;
 }
 
-footer a {
+footer a{
     color: #000;
     text-align: center;
     font-family: Syne;
@@ -104,7 +112,7 @@ footer a {
     text-decoration: none;
 }
 
-footer a:hoover {
+footer a:hover{
     color: #000;
     text-align: center;
     font-family: Syne;
@@ -116,38 +124,202 @@ footer a:hoover {
 }
 
 /* main */
-
-.entry-content {
-    background: white;
-    display: flex;
-    flex-direction: column;
-}
-
-/*
-.elipse {
-    clip-path: ellipse(80% 50% at 50% 20%);
-    background: #DC9F96;
-    height: 100px;
-    width: 100%;
-    border: none;
-}
-
-.elipse2 {
-    clip-path: ellipse(80% 50% at 50% 20%);
-    background: red;
-    height: 100px;
-    width: 100%;
-    border: none;
-}
-
+/*  
+background: #ece2da;
+    clip-path: ellipse(120% 80% at 50% 20%);
+    padding-top: 30px;
+    padding-bottom: 60px;
 */
 
-.hero-img {
-    background: #ece2da;
-    clip-path: ellipse(120% 80% at 50% 20%);
+
+
+.pink-bg{
+    background-color: #ece2da;
 }
 
-.white-bg {
-    background: white;
+.energy{
+    background-image: 
+    url('data:image/svg+xml,<svg xmlns="http://www.w3.org/2000/svg" width="1440" height="415" viewBox="0 0 1440 415" fill="none"><path d="M0 0C0 0 5 56.9851 722.5 56.9851C1440 56.9851 1440 0 1440 0V415H0V0Z" fill="white"/></svg>'),
+    url('data:image/svg+xml,<svg xmlns="http://www.w3.org/2000/svg" width="1440" height="425" viewBox="0 0 1440 425" fill="none"><path d="M0 0C0 0 5 58.3582 722.5 58.3582C1440 58.3582 1440 0 1440 0V425H0V0Z" fill="%23E3D9D0"/></svg>') 
+        ;
+    Background-color:#ece2da;
+    background-position-x: center;
+    background-position-y: bottom;
+    background-origin: border-box;
+    background-repeat: no-repeat;
+    height: 425px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-content: center;
 }
+
+.planty-txt{
+    width: 500px;
+}
+
+.gouts-content{
+    padding: 0px!important;
+    margin: 0px!important;
+}
+
+.gouts-groupe{
+    padding: 60px;
+    background: #ece2da;
+}
+
+.saveur{
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-content: center;
+    padding-top: 20px;
+    padding-bottom: 20px;
+    gap: 30px;
+}
+
+.button{
+    padding-top : 30px;
+    padding-bottom: 30px;
+    background: #ece2da;
+}
+
+.temoignage{
+    display: flex;
+    justify-content: center;
+    margin-top: 80px;
+    margin-bottom: 80px;
+}
+
+/* backgroung canette */
+
+.canette {
+    background-image: url(http://planty.local/wp-content/uploads/2023/12/Group-8-e1704024441847.png);
+    background-repeat: repeat-x;
+    height: 161px;
+    background-color: white;
+    background-position-y: bottom;
+}
+
+.page-id-15 .canette {
+    background-color: #ece2da;
+}
+
+/* nous rencontrer */
+
+.post-15{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    align-content: center;
+    flex-wrap: wrap;
+    background: #ece2da;
+}
+
+.post-15 .hero{
+    display: flex;
+    flex-direction: column;
+    gap: 30px;
+}
+
+.post-15 .hero h2{
+    max-width: 700px;
+    margin: 0px;
+    padding: 0px;
+}
+.post-15 .hero p{
+    max-width: 700px;
+    margin: 0px;
+    padding: 0px;
+}
+
+/* form nous rencontrer */
+
+.your-name{
+    width: 383px;
+    height: 71px;
+    flex-shrink: 0;
+    border: 0px;
+    border-radius: 7px!important;
+    background: #FFF;
+    box-shadow: 0px 4px 14px 0px rgba(0, 0, 0, 0.04);
+}
+
+.your-email{
+    width: 383px;
+    height: 71px;
+    flex-shrink: 0;
+    border: 0px;
+    border-radius: 7px!important;
+    background: #FFF;
+    box-shadow: 0px 4px 14px 0px rgba(0, 0, 0, 0.04);
+}
+.your-message{
+    width: 383px;
+    height: 237px;
+    flex-shrink: 0;
+    border: 0px;
+    border-radius: 7px!important;
+    background: #FFF;
+    box-shadow: 0px 4px 14px 0px rgba(0, 0, 0, 0.04);
+}
+
+.envoyer{
+    display: flex;
+    width: 198px;
+    height: 55px;
+    padding: 9px 0px;
+    justify-content: center;
+    align-items: center;
+    flex-shrink: 0;
+    border-radius: 5px!important;
+    border: 0px;
+    background: #E0B9B4;
+    color: #FFF;
+    text-align: center;
+    font-family: Syne;
+    font-size: 15px;
+    font-style: normal;
+    font-weight: 400;
+    line-height: 37px;
+}
+
+.groupe-team{
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    margin-bottom: 66px;
+}
+
+.form-contact{
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+}
+
+.form-contact p{
+    margin:20px;
+}
+
+.form-contact input,textarea{
+    margin-top:15px;
+}
+
+.btn-envoyer{
+    display: flex;
+    justify-content: center;
+    margin: 0px;
+}
+
+.btn-envoyer p{
+    margin:0px;
+}
+
+.btn-envoyer .envoyer{
+    margin:0px;
+    margin-bottom: 50px;
+}
+
+
 
