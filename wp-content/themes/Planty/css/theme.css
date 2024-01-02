@@ -3,6 +3,16 @@
 @import url('https://fonts.googleapis.com/css2?family=Syne:wght@400;500;600;700;800&display=swap');
 
 */
+/* couleur */
+
+:root {
+    --color-pink: #DC9F96;
+    --color-red: #C02E44;
+    --color-pink-bg: #ECE2DA;
+    --color-green: #3B8E46;
+    --color-pink-txt: #D2776A;
+}
+
 body{
     width: 100%;
     display: flex;
@@ -253,27 +263,43 @@ background: #ece2da;
     display: flex;
     flex-direction: column;
     justify-content: center;
-    align-items: center;
-    align-content: center;
     flex-wrap: wrap;
-    background: #ece2da;
+    background-color: #ece2da;
+    width: 100%;
+    max-width: 1440px;
 }
 
-.post-15 .hero{
+.post-15 .container-hero{
     display: flex;
     flex-direction: column;
+    align-items: center;
     gap: 30px;
+    margin: 0px;
+    padding: 0px;
+    z-index: 2;
 }
 
-.post-15 .hero h2{
+.post-15 .container-hero p{
     max-width: 700px;
-    margin: 0px;
-    padding: 0px;
 }
-.post-15 .hero p{
-    max-width: 700px;
+
+.post-15 .groupe-team{
+    display:flex;
+    justify-content: space-evenly;
     margin: 0px;
-    padding: 0px;
+}
+
+.container-team{
+    background-image: url('data:image/svg+xml,<svg xmlns="http://www.w3.org/2000/svg" width="1438" height="554" viewBox="0 0 1438 554" fill="none"><path d="M-2 0C-2 0 3 76.0716 720.5 76.0716C1438 76.0716 1438 0 1438 0V554H-2V0Z" fill="white"/></svg>');
+    Background-color:#ece2da;
+    background-position-x: center;
+    background-position-y: bottom;
+    background-origin: border-box;
+    background-repeat: no-repeat;
+    height: 554px;
+    display: flex;
+    flex-direction: column;
+    padding-top: 100px;
 }
 
 /* form nous rencontrer */
@@ -307,37 +333,22 @@ background: #ece2da;
     box-shadow: 0px 4px 14px 0px rgba(0, 0, 0, 0.04);
 }
 
-.envoyer{
-    display: flex;
-    width: 198px;
-    height: 55px;
-    padding: 9px 0px;
-    justify-content: center;
-    align-items: center;
-    flex-shrink: 0;
-    border-radius: 5px!important;
-    border: 0px;
-    background: #E0B9B4;
-    color: #FFF;
-    text-align: center;
-    font-family: Syne;
-    font-size: 15px;
-    font-style: normal;
-    font-weight: 400;
-    line-height: 37px;
-}
-
-.groupe-team{
-    display: flex;
-    flex-direction: row;
-    justify-content: center;
-    margin-bottom: 66px;
-}
-
 .form-contact{
     display: flex;
     flex-direction: row;
     justify-content: center;
+}
+
+.form-contact h3{
+    color: #000;
+    text-align: center;
+    font-family: Syne;
+    font-size: 30px;
+    font-style: normal;
+    font-weight: 700;
+    line-height: normal;
+    margin-top: 66px;
+    margin-bottom:45px;
 }
 
 .form-contact p{
@@ -363,5 +374,94 @@ background: #ece2da;
     margin-bottom: 50px;
 }
 
+.envoyer{
+    display: flex;
+    width: 198px;
+    height: 55px;
+    padding: 9px 0px;
+    justify-content: center;
+    align-items: center;
+    flex-shrink: 0;
+    border-radius: 5px!important;
+    border: 0px;
+    background: #E0B9B4;
+    color: #FFF;
+    text-align: center;
+    font-family: Syne;
+    font-size: 15px;
+    font-style: normal;
+    font-weight: 400;
+    line-height: 37px;
+}
 
+/* feuille position */
 
+.fleur{
+    position: relative;
+    top: 70px; 
+    left: 150px;
+    z-index: 1;
+}
+
+.feuille{
+    position: relative;
+    top: 70px; 
+    left: 150px;
+    z-index: 1;  
+}
+
+.feuille2{
+    position: relative;
+    top: 70px; 
+    left: 150px;
+    z-index: 1;
+}
+
+/* page commander */
+
+.post-17{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    flex-wrap: wrap;
+    background-color: var(--color-green);
+    width: 100%;
+    max-width: 1440px;
+}
+
+.post-17 h2{
+    max-width: 860px;
+    padding-top: 70px;
+    padding-bottom: 70px;
+    border-bottom: 1px solid white;
+}
+
+.post-17 h3{
+    max-width: 860px;
+    padding-top: 40px;
+    padding-bottom: 40px;
+}
+
+.post-17 .container-img{
+    display: flex;
+    justify-content: space-between;
+    max-width: 860px;
+}
+
+.post-17 .quantity p{
+    display: flex;
+    justify-content: space-evenly;
+    max-width: 860px;
+}
+
+.post-17 .quantity input{
+    width: 39px;
+    height: 56px;
+    flex-shrink: 0;
+    color: #000;
+    font-family: Inter;
+    font-size: 16px;
+    font-style: normal;
+    font-weight: 400;
+    line-height: normal;
+}
