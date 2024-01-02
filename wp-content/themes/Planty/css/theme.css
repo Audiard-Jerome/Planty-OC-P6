@@ -440,11 +440,22 @@ background: #ece2da;
     max-width: 860px;
     padding-top: 40px;
     padding-bottom: 40px;
+    color: #FFF;
+    font-family: Syne;
+    font-size: 30px;
+    font-style: normal;
+    font-weight: 700;
+    line-height: normal;
 }
 
 .post-17 .container-img{
     display: flex;
     justify-content: space-between;
+    max-width: 860px;
+}
+
+.post-17 .quantity{
+    border-bottom: 1px solid white;
     max-width: 860px;
 }
 
@@ -464,4 +475,17 @@ background: #ece2da;
     font-style: normal;
     font-weight: 400;
     line-height: normal;
+    border:0px;
+    text-align: center;
+    margin-top:16px;
+    margin-bottom: 39px;
 }
+
+.post-17 .form-txt{
+    display:flex;
+    flex-direction: row;
+    flex-shrink: 1;
+    max-width: 860px;
+
+}
+
