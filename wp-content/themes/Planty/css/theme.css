@@ -3,6 +3,7 @@
 @import url('https://fonts.googleapis.com/css2?family=Syne:wght@400;500;600;700;800&display=swap');
 
 */
+
 /* couleur */
 
 :root {
@@ -11,19 +12,16 @@
     --color-pink-bg: #ECE2DA;
     --color-green: #3B8E46;
     --color-pink-txt: #D2776A;
+
 }
 
-body{
-    width: 100%;
-    display: flex;
-    flex-direction: column;
-    flex-wrap: wrap;
-}
-
-a,
 body{
    font-family: 'Syne', sans-serif;
    margin: 0;
+   display: flex;
+   flex-direction: column;
+   width: 100%;
+   box-sizing: border-box;
 }
 
 /* Header */
@@ -37,6 +35,7 @@ header{
     padding: 0;
     margin: 0;
     background: white;
+    width: 100%;
 }
 
 ul, li{
@@ -74,7 +73,6 @@ header #menu a:hover{
     font-size: 13px;
     font-weight: 700;
     text-decoration: none;
-    background: #C02E44;
 }
 
 header #menu .btn_commander a{
@@ -134,28 +132,25 @@ footer a:hover{
 }
 
 /* main */
-/*  
-background: #ece2da;
-    clip-path: ellipse(120% 80% at 50% 20%);
-    padding-top: 30px;
-    padding-bottom: 60px;
-*/
 
 .page-id-13{
-    background-color: #ece2da;
+    background: white;
 }
 
-.hero-img{
-    margin-top: 105px;
+.page-id-13 .hero-container{
+    padding-top: 80px;
+    background-color: var(--color-pink-bg);
+    clip-path: ellipse(120% 80% at 50% 20%);
+    padding-bottom: 60px;
 }
 
-.hero-img img{
+.page-id-13 .hero-container img{
     margin-top: 80px;
     margin-bottom: 50px;
 }
 
 .energy{
-    background-image: 
+    /*background-image: 
     url('data:image/svg+xml,<svg xmlns="http://www.w3.org/2000/svg" width="1440" height="415" viewBox="0 0 1440 415" fill="none"><path d="M0 0C0 0 5 56.9851 722.5 56.9851C1440 56.9851 1440 0 1440 0V415H0V0Z" fill="white"/></svg>'),
     url('data:image/svg+xml,<svg xmlns="http://www.w3.org/2000/svg" width="1440" height="425" viewBox="0 0 1440 425" fill="none"><path d="M0 0C0 0 5 58.3582 722.5 58.3582C1440 58.3582 1440 0 1440 0V425H0V0Z" fill="%23E3D9D0"/></svg>') 
         ;
@@ -163,12 +158,19 @@ background: #ece2da;
     background-position-x: center;
     background-position-y: bottom;
     background-origin: border-box;
-    background-repeat: no-repeat;
+    background-repeat: no-repeat;*/
+    background-color: white;
     height: 425px;
     display: flex;
     flex-direction: column;
     gap: 40px;
     padding-top: 140px;
+    /*  
+    background: #ece2da;
+    clip-path: ellipse(120% 80% at 50% 20%);
+    padding-top: 30px;
+    padding-bottom: 60px;
+    */
 }
 
 .energy p{
@@ -191,6 +193,7 @@ background: #ece2da;
     gap: 10px;
     padding-top: 40px;
     padding-bottom: 20px;
+    background-color: var(--color-pink-bg);
 }
 
 .saveur{
@@ -201,12 +204,15 @@ background: #ece2da;
     padding-top: 20px;
     padding-bottom: 20px;
     gap: 30px;
+    background-color: var(--color-pink-bg);
 }
 
 .button{
     padding-top : 15px;
     padding-bottom: 15px;
     padding-bottom: 60px;
+    background-color: var(--color-pink-bg);
+    clip-path: ellipse(100% 80% at 50% 20%);
 }
 
 .button a{
@@ -217,14 +223,6 @@ background: #ece2da;
     width: 198px;
     height: 55px;
 } 
-
-/* elipse 
-.group-gouts{
-    background: white;
-    clip-path: ellipse(120% 80% at 50% 20%);
-}
-
-*/ 
 
 .group-temoignage{
     display: flex;
@@ -254,7 +252,7 @@ background: #ece2da;
 }
 
 .page-id-15 .canette {
-    background-color: #ece2da;
+    background-color: var(--color-pink-bg);
 }
 
 /* nous rencontrer */
@@ -264,9 +262,8 @@ background: #ece2da;
     flex-direction: column;
     justify-content: center;
     flex-wrap: wrap;
-    background-color: #ece2da;
+    background-color: var(--color-pink-bg);
     width: 100%;
-    max-width: 1440px;
 }
 
 .post-15 .container-hero{
@@ -275,22 +272,29 @@ background: #ece2da;
     align-items: center;
     gap: 30px;
     margin: 0px;
-    padding: 0px;
+    padding-bottom: 60px;
     z-index: 2;
+    clip-path: ellipse(100% 80% at 50% 20%);
 }
 
 .post-15 .container-hero p{
     max-width: 700px;
 }
 
+.post-15 .container-hero h2{
+    z-index: 2;
+}
+
 .post-15 .groupe-team{
     display:flex;
     justify-content: space-evenly;
     margin: 0px;
+    width: 900px;
 }
 
+/* essai svg 
 .container-team{
-    background-image: url('data:image/svg+xml,<svg xmlns="http://www.w3.org/2000/svg" width="1438" height="554" viewBox="0 0 1438 554" fill="none"><path d="M-2 0C-2 0 3 76.0716 720.5 76.0716C1438 76.0716 1438 0 1438 0V554H-2V0Z" fill="white"/></svg>');
+    background-image: url('data:image/svg+xml,<svg xmlns="http://www.w3.org/2000/svg" width="1440" height="554" viewBox="0 0 1400 554" fill="none"><path d="M-2 0C-2 0 3 76.0716 720.5 76.0716C1438 76.0716 1440 0 1440 0V554H-2V0Z" fill="white"/></svg>');
     Background-color:#ece2da;
     background-position-x: center;
     background-position-y: bottom;
@@ -300,6 +304,11 @@ background: #ece2da;
     display: flex;
     flex-direction: column;
     padding-top: 100px;
+}
+*/ 
+
+.container-team{
+    Background-color:white;
 }
 
 /* form nous rencontrer */
@@ -337,6 +346,7 @@ background: #ece2da;
     display: flex;
     flex-direction: row;
     justify-content: center;
+    z-index: 1;
 }
 
 .form-contact h3{
@@ -398,9 +408,10 @@ background: #ece2da;
 
 .fleur{
     position: relative;
-    top: 70px; 
-    left: 150px;
+    top: 71px; 
+    left: 143px;
     z-index: 1;
+    display: none;
 }
 
 .feuille{
@@ -408,25 +419,26 @@ background: #ece2da;
     top: 70px; 
     left: 150px;
     z-index: 1;  
+    display: none;
 }
 
 .feuille2{
     position: relative;
-    top: 70px; 
-    left: 150px;
+    top: 700px; 
+    left: 500px;
     z-index: 1;
+    display: none;
 }
 
 /* page commander */
 
-.post-17{
+.post-17 {
     display: flex;
     flex-direction: column;
     justify-content: center;
+    align-content: center;
     flex-wrap: wrap;
     background-color: var(--color-green);
-    width: 100%;
-    max-width: 1440px;
 }
 
 .post-17 h2{
@@ -440,6 +452,7 @@ background: #ece2da;
     max-width: 860px;
     padding-top: 40px;
     padding-bottom: 40px;
+    padding-left: 0px;
     color: #FFF;
     font-family: Syne;
     font-size: 30px;
@@ -454,23 +467,27 @@ background: #ece2da;
     max-width: 860px;
 }
 
-.post-17 .quantity{
-    border-bottom: 1px solid white;
+/* form commander */
+
+.form-commander{
     max-width: 860px;
+    padding-bottom: 100px;
 }
 
-.post-17 .quantity p{
+.form-commander .quantity{
+    border-bottom: 1px solid white;
+}
+
+.form-commander .quantity p{
     display: flex;
     justify-content: space-evenly;
-    max-width: 860px;
 }
 
-.post-17 .quantity input{
+.form-commander .quantity input{
     width: 39px;
     height: 56px;
     flex-shrink: 0;
     color: #000;
-    font-family: Inter;
     font-size: 16px;
     font-style: normal;
     font-weight: 400;
@@ -481,11 +498,69 @@ background: #ece2da;
     margin-bottom: 39px;
 }
 
-.post-17 .form-txt{
+.form-commander .form-txt{
     display:flex;
     flex-direction: row;
-    flex-shrink: 1;
-    max-width: 860px;
-
+    margin-top:55px;
 }
 
+.form-commander .information{
+    width: 50%;
+    border-right: 1px solid white;
+    padding-right: 50px;
+}
+
+.form-commander .livraison{
+    width: 50%;
+    padding-left: 50px;
+}
+
+.form-commander h3{
+    padding-top: 0px;
+    padding-bottom: 30px;
+}
+
+.form-commander p{
+    color: #FFF;
+    font-family: Syne;
+    font-size: 20px;
+    font-style: normal;
+    font-weight: 400;
+    line-height: normal;
+}
+
+.form-commander .form-txt input{
+    width: 100%;
+    height: 71px;
+    flex-shrink: 0;
+    border-radius: 7px;
+    background: #FFF;
+    box-shadow: 0px 4px 14px 0px rgba(0, 0, 0, 0.04);
+    border: 0px;
+    margin-top: 13px;
+    margin-bottom: 30px;
+}
+
+.form-commander .form-txt .no-margin{
+    margin-bottom: 0px;
+}
+
+.form-commander .btn-commander{
+    display: flex;
+    width: 198px;
+    height: 55px;
+    padding: 9px 57px 9px 56px;
+    justify-content: center;
+    align-items: center;
+    flex-shrink: 0;
+    border-radius: 5px;
+    border: 0px;
+    background: #E0B9B4;
+    color: #FFF;
+    text-align: center;
+    font-family: Syne;
+    font-size: 15px;
+    font-style: normal;
+    font-weight: 400;
+    margin-top: 44px;
+}
