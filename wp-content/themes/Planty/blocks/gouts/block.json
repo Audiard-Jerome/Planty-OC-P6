@@ -1,0 +1,16 @@
+{
+    "name": "acf/gouts",
+    "title": "gouts",
+    "description": "gouts planty",
+    "style": [ "file:./gouts.css" ],
+    "category": "formatting",
+    "icon": "admin-comments",
+    "keywords": ["gouts", "planty"],
+    "acf": {
+        "mode": "preview",
+        "renderTemplate": "gouts.php"
+    },
+    "supports": {
+        "anchor": true
+    }
+}

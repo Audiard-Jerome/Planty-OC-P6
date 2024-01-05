@@ -74,6 +74,6 @@ add_filter('wp_nav_menu_items', 'add_admin_link', 10, 2);
 function planty_register_acf_blocks() {
     register_block_type( __DIR__ . '/blocks/temoignage' );
 	register_block_type( __DIR__ . '/blocks/portrait' );
-}
+}	register_block_type( __DIR__ . '/blocks/gouts' );
 
 add_action( 'init', 'planty_register_acf_blocks' );

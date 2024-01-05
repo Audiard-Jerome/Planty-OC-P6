@@ -1,0 +1,21 @@
+.acf__gouts {
+    position: relative;
+}
+
+.acf__gouts-txt {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    color: #FFF;
+    text-align: center;
+    font-family: Syne;
+    font-size: 48px;
+    font-style: normal;
+    font-weight: 800;
+    line-height: normal;
+    text-transform: uppercase;
+    max-width: 350px;
+    overflow-wrap: break-word;
+}
+

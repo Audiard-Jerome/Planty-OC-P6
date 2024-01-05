@@ -1,6 +1,6 @@
 <?php
 /**
- * Testimonial Block template.
+ * Portrait Block template.
  *
  * @param array $block The block settings and attributes.
  */
@@ -22,4 +22,4 @@
         <div class="acf__job">
             <?php echo wp_kses_post ( get_field('job') ); ?>
         </div>    
-</div>    
+</div>

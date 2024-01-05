@@ -60,7 +60,7 @@ header #menu a{
     flex-shrink: 0;
     background: white;
     text-decoration: none;
-    color: #000;
+    color: black;
     font-family: Syne;
     font-size: 16px;
     font-weight: 400;
@@ -76,7 +76,7 @@ header #menu a:hover{
 }
 
 header #menu .btn_commander a{
-    background: #DC9F96;
+    background: var(--color-pink);
     font-size: 16px;
     font-weight: 400;
     font-family: Syne;
@@ -85,7 +85,7 @@ header #menu .btn_commander a{
 
 
 header #menu .btn_commander a:hover{
-    background: #C02E44;
+    background: var(--color-red);
 }
 
 
@@ -133,87 +133,101 @@ footer a:hover{
 
 /* main */
 
-.page-id-13{
+.post-13{
     background: white;
 }
 
-.page-id-13 .hero-container{
+.post-13 .hero-container{
     padding-top: 80px;
     background-color: var(--color-pink-bg);
-    clip-path: ellipse(120% 80% at 50% 20%);
     padding-bottom: 60px;
 }
 
-.page-id-13 .hero-container img{
+.ellipse-planty{
+    height:40px;
+    width:100%;
+    background-color: var(--color-pink-bg);
+    border-radius: 0 0 60% 60%;
+    box-shadow: 0 10px 0 #e3d9d0;
+  }
+
+.post-13 .hero-container img{
     margin-top: 80px;
     margin-bottom: 50px;
 }
 
-.energy{
-    /*background-image: 
-    url('data:image/svg+xml,<svg xmlns="http://www.w3.org/2000/svg" width="1440" height="415" viewBox="0 0 1440 415" fill="none"><path d="M0 0C0 0 5 56.9851 722.5 56.9851C1440 56.9851 1440 0 1440 0V415H0V0Z" fill="white"/></svg>'),
-    url('data:image/svg+xml,<svg xmlns="http://www.w3.org/2000/svg" width="1440" height="425" viewBox="0 0 1440 425" fill="none"><path d="M0 0C0 0 5 58.3582 722.5 58.3582C1440 58.3582 1440 0 1440 0V425H0V0Z" fill="%23E3D9D0"/></svg>') 
-        ;
-    Background-color:#ece2da;
-    background-position-x: center;
-    background-position-y: bottom;
-    background-origin: border-box;
-    background-repeat: no-repeat;*/
-    background-color: white;
-    height: 425px;
+.container-energy{
+    height: 385px;
     display: flex;
     flex-direction: column;
     gap: 40px;
-    padding-top: 140px;
-    /*  
-    background: #ece2da;
-    clip-path: ellipse(120% 80% at 50% 20%);
-    padding-top: 30px;
-    padding-bottom: 60px;
-    */
+    padding-top: 90px;
 }
 
-.energy p{
-    width: 497px;
+.container-energy p{
+    width: 500px;
     padding: 30px;
 }
 
-.planty-txt{
-    width: 500px;
-}
-
-.gouts-content{
-    padding: 0px!important;
-    margin: 0px!important;
-}
-
-.gouts-groupe{
+.container-gouts{
     display: flex;
     flex-direction: column;
     gap: 10px;
-    padding-top: 40px;
+    padding-top: 60px;
     padding-bottom: 20px;
     background-color: var(--color-pink-bg);
 }
 
-.saveur{
+.container-gouts h3{
+    padding-top:60px;
+    padding-bottom: 10px;
+}
+
+.container-gouts p{
+    padding-bottom: 48px;
+}
+
+.container-saveur{
     display: flex;
     flex-direction: row;
+    flex-wrap: wrap;
     justify-content: center;
     align-content: center;
-    padding-top: 20px;
-    padding-bottom: 20px;
     gap: 30px;
-    background-color: var(--color-pink-bg);
+    max-width: 850px!important;
 }
 
-.button{
-    padding-top : 15px;
+.container-button{
+    padding-top : 50px;
     padding-bottom: 15px;
-    padding-bottom: 60px;
-    background-color: var(--color-pink-bg);
-    clip-path: ellipse(100% 80% at 50% 20%);
+    width: 100%;
 }
+
+.container-button a{
+    display: flex;
+    width: 198px;
+    height: 55px;
+    padding: 9px 57px 9px 56px;
+    justify-content: center;
+    align-items: center;
+    flex-shrink: 0;
+    border-radius: 5px;
+    background: #E0B9B4;
+    color: #FFF;
+    text-align: center;
+    font-family: Syne;
+    font-size: 15px;
+    font-style: normal;
+    font-weight: 400;
+    line-height: 37px;
+}
+
+.ellipse-gouts{
+    height:20px;
+    width:100%;
+    background-color: var(--color-pink-bg);
+    border-radius: 0 0 60% 60%;
+  }
 
 .button a{
     display: flex;
@@ -224,21 +238,21 @@ footer a:hover{
     height: 55px;
 } 
 
-.group-temoignage{
+.container-testimonial{
     display: flex;
     flex-direction: column;
     background-color: white;
+    padding-bottom: 80px;
 }
 
-.group-temoignage h3{
-    padding-top:130px;
+.container-testimonial h3{
+    padding-top:100px;
     padding-bottom: 80px;
 }
 
 .temoignage{
     display: flex;
     justify-content: center;
-    padding-bottom: 100px;
 }
 
 /* backgroung canette */
@@ -251,7 +265,7 @@ footer a:hover{
     background-position-y: bottom;
 }
 
-.page-id-15 .canette {
+.post-15 .canette {
     background-color: var(--color-pink-bg);
 }
 
@@ -262,7 +276,6 @@ footer a:hover{
     flex-direction: column;
     justify-content: center;
     flex-wrap: wrap;
-    background-color: var(--color-pink-bg);
     width: 100%;
 }
 
@@ -272,9 +285,8 @@ footer a:hover{
     align-items: center;
     gap: 30px;
     margin: 0px;
-    padding-bottom: 60px;
-    z-index: 2;
-    clip-path: ellipse(100% 80% at 50% 20%);
+    padding-bottom: 100px;
+    background: var(--color-pink-bg);
 }
 
 .post-15 .container-hero p{
@@ -282,7 +294,19 @@ footer a:hover{
 }
 
 .post-15 .container-hero h2{
+    padding-top: 186px;
     z-index: 2;
+}
+
+.fleur{
+    position: absolute;
+    top: 150px; 
+    left: 175px;
+    z-index: 1;
+}
+
+.container-team{
+    Background-color:white;
 }
 
 .post-15 .groupe-team{
@@ -292,23 +316,11 @@ footer a:hover{
     width: 900px;
 }
 
-/* essai svg 
-.container-team{
-    background-image: url('data:image/svg+xml,<svg xmlns="http://www.w3.org/2000/svg" width="1440" height="554" viewBox="0 0 1400 554" fill="none"><path d="M-2 0C-2 0 3 76.0716 720.5 76.0716C1438 76.0716 1440 0 1440 0V554H-2V0Z" fill="white"/></svg>');
-    Background-color:#ece2da;
-    background-position-x: center;
-    background-position-y: bottom;
-    background-origin: border-box;
-    background-repeat: no-repeat;
-    height: 554px;
-    display: flex;
-    flex-direction: column;
-    padding-top: 100px;
-}
-*/ 
-
-.container-team{
-    Background-color:white;
+.feuille{
+    position: relative;
+    top: 70px; 
+    left: 150px;
+    z-index: 1;
 }
 
 /* form nous rencontrer */
@@ -347,6 +359,7 @@ footer a:hover{
     flex-direction: row;
     justify-content: center;
     z-index: 1;
+    background-color: var(--color-pink-bg);
 }
 
 .form-contact h3{
@@ -406,28 +419,15 @@ footer a:hover{
 
 /* feuille position */
 
-.fleur{
-    position: relative;
-    top: 71px; 
-    left: 143px;
-    z-index: 1;
-    display: none;
-}
 
-.feuille{
-    position: relative;
-    top: 70px; 
-    left: 150px;
-    z-index: 1;  
-    display: none;
-}
+
+
 
 .feuille2{
     position: relative;
     top: 700px; 
     left: 500px;
     z-index: 1;
-    display: none;
 }
 
 /* page commander */
