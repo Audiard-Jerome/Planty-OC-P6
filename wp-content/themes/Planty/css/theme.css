@@ -140,11 +140,10 @@ footer a:hover{
 .post-13 .hero-container{
     padding-top: 80px;
     background-color: var(--color-pink-bg);
-    padding-bottom: 60px;
 }
 
-.ellipse-planty{
-    height:40px;
+.post-13 .ellipse-planty{
+    height:100px;
     width:100%;
     background-color: var(--color-pink-bg);
     border-radius: 0 0 60% 60%;
@@ -156,7 +155,7 @@ footer a:hover{
     margin-bottom: 50px;
 }
 
-.container-energy{
+.post-13 .container-energy{
     height: 385px;
     display: flex;
     flex-direction: column;
@@ -164,12 +163,12 @@ footer a:hover{
     padding-top: 90px;
 }
 
-.container-energy p{
+.post-13 .container-energy p{
     width: 500px;
     padding: 30px;
 }
 
-.container-gouts{
+.post-13 .container-gouts{
     display: flex;
     flex-direction: column;
     gap: 10px;
@@ -178,16 +177,16 @@ footer a:hover{
     background-color: var(--color-pink-bg);
 }
 
-.container-gouts h3{
+.post-13 .container-gouts h3{
     padding-top:60px;
     padding-bottom: 10px;
 }
 
-.container-gouts p{
+.post-13 .container-gouts p{
     padding-bottom: 48px;
 }
 
-.container-saveur{
+.post-13 .container-saveur{
     display: flex;
     flex-direction: row;
     flex-wrap: wrap;
@@ -197,13 +196,13 @@ footer a:hover{
     max-width: 850px!important;
 }
 
-.container-button{
+.post-13 .container-button{
     padding-top : 50px;
     padding-bottom: 15px;
     width: 100%;
 }
 
-.container-button a{
+.post-13 .container-button a{
     display: flex;
     width: 198px;
     height: 55px;
@@ -222,14 +221,14 @@ footer a:hover{
     line-height: 37px;
 }
 
-.ellipse-gouts{
+.post-13 .ellipse-gouts{
     height:20px;
     width:100%;
     background-color: var(--color-pink-bg);
     border-radius: 0 0 60% 60%;
   }
 
-.button a{
+  .post-13 .button a{
     display: flex;
     justify-content: center;
     align-content: center;
@@ -238,21 +237,16 @@ footer a:hover{
     height: 55px;
 } 
 
-.container-testimonial{
+.post-13 .container-testimonial{
     display: flex;
     flex-direction: column;
     background-color: white;
     padding-bottom: 80px;
 }
 
-.container-testimonial h3{
+.post-13 .container-testimonial h3{
     padding-top:100px;
     padding-bottom: 80px;
-}
-
-.temoignage{
-    display: flex;
-    justify-content: center;
 }
 
 /* backgroung canette */
@@ -285,8 +279,15 @@ footer a:hover{
     align-items: center;
     gap: 30px;
     margin: 0px;
-    padding-bottom: 100px;
     background: var(--color-pink-bg);
+    position: relative;
+}
+
+.post-15 .fleur{
+    position: absolute;
+    top:71px;
+    left: 10%;
+    z-index: 0;
 }
 
 .post-15 .container-hero p{
@@ -295,37 +296,55 @@ footer a:hover{
 
 .post-15 .container-hero h2{
     padding-top: 186px;
-    z-index: 2;
-}
-
-.fleur{
-    position: absolute;
-    top: 150px; 
-    left: 175px;
     z-index: 1;
 }
 
-.container-team{
+.post-15 .ellipse{
+    height:100px;
+    width:100%;
+    background-color: var(--color-pink-bg);
+    border-radius: 0 0 80% 40%;
+  }
+
+.post-15 .container-team{
+    position: relative;
     Background-color:white;
+    height: 450px;
+    padding-top: 20px;
 }
 
-.post-15 .groupe-team{
+.post-15 .feuille{
+    position: absolute;
+    bottom: 0%; 
+    left: 80%;
+    z-index: 1;
+}
+
+.post-15 .container-acf{
     display:flex;
     justify-content: space-evenly;
     margin: 0px;
     width: 900px;
 }
 
-.feuille{
+/* form nous-rencontrer */
+
+.post-15 .feuille2{
     position: relative;
-    top: 70px; 
-    left: 150px;
+    top: -250px; 
+    left: 31%;
     z-index: 1;
+    height: 0px;
 }
 
-/* form nous rencontrer */
+.post-15 .form-contact{
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    background-color: var(--color-pink-bg);
+}
 
-.your-name{
+.post-15 .your-name,.your-email{
     width: 383px;
     height: 71px;
     flex-shrink: 0;
@@ -333,18 +352,10 @@ footer a:hover{
     border-radius: 7px!important;
     background: #FFF;
     box-shadow: 0px 4px 14px 0px rgba(0, 0, 0, 0.04);
+    margin-top: 13px;
 }
 
-.your-email{
-    width: 383px;
-    height: 71px;
-    flex-shrink: 0;
-    border: 0px;
-    border-radius: 7px!important;
-    background: #FFF;
-    box-shadow: 0px 4px 14px 0px rgba(0, 0, 0, 0.04);
-}
-.your-message{
+.post-15 .your-message{
     width: 383px;
     height: 237px;
     flex-shrink: 0;
@@ -352,17 +363,12 @@ footer a:hover{
     border-radius: 7px!important;
     background: #FFF;
     box-shadow: 0px 4px 14px 0px rgba(0, 0, 0, 0.04);
+    margin-top: 13px;
+    z-index: 2;
+    position:sticky;
 }
 
-.form-contact{
-    display: flex;
-    flex-direction: row;
-    justify-content: center;
-    z-index: 1;
-    background-color: var(--color-pink-bg);
-}
-
-.form-contact h3{
+.post-15 .form-contact h3{
     color: #000;
     text-align: center;
     font-family: Syne;
@@ -374,30 +380,26 @@ footer a:hover{
     margin-bottom:45px;
 }
 
-.form-contact p{
-    margin:20px;
+.post-15 .form-contact p{
+    margin:22px;
 }
 
-.form-contact input,textarea{
-    margin-top:15px;
-}
-
-.btn-envoyer{
+.post-15 .btn-envoyer{
     display: flex;
     justify-content: center;
     margin: 0px;
 }
 
-.btn-envoyer p{
+.post-15 .btn-envoyer p{
     margin:0px;
 }
 
-.btn-envoyer .envoyer{
+.post-15 .btn-envoyer .envoyer{
     margin:0px;
     margin-bottom: 50px;
 }
 
-.envoyer{
+.post-15 .envoyer{
     display: flex;
     width: 198px;
     height: 55px;
@@ -415,19 +417,6 @@ footer a:hover{
     font-style: normal;
     font-weight: 400;
     line-height: 37px;
-}
-
-/* feuille position */
-
-
-
-
-
-.feuille2{
-    position: relative;
-    top: 700px; 
-    left: 500px;
-    z-index: 1;
 }
 
 /* page commander */
@@ -474,16 +463,30 @@ footer a:hover{
     padding-bottom: 100px;
 }
 
-.form-commander .quantity{
+.form-commander p{
+    margin:0px;
+    padding:0px;
+}
+
+.form-commander .container-quantity{
+    display: flex;
+    justify-content: space-between;
     border-bottom: 1px solid white;
 }
 
-.form-commander .quantity p{
+.form-commander .container-quantity p{
     display: flex;
-    justify-content: space-evenly;
+    justify-content: center;
+    width: 100%;
 }
 
-.form-commander .quantity input{
+.form-commander .container-quantity .quantity{
+    width: 192px;
+}
+
+.form-commander .container-quantity input{
+    display: flex;
+    justify-content: center;
     width: 39px;
     height: 56px;
     flex-shrink: 0;
@@ -543,6 +546,11 @@ footer a:hover{
 
 .form-commander .form-txt .no-margin{
     margin-bottom: 0px;
+}
+
+.form-commander .btn-envoyer{
+    display:flex;
+    justify-content: center;
 }
 
 .form-commander .btn-commander{
