@@ -5,6 +5,7 @@
     width: 200px;
     align-items: center;
     gap: 15px;
+    z-index: 1;
 }
 
 .acf__name {

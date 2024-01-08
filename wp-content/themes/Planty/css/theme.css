@@ -166,7 +166,7 @@ footer a:hover{
 }
 
 .post-13 .container-energy p{
-    width: 500px;
+    max-width: 500px;
     padding: 30px;
 }
 
@@ -308,7 +308,6 @@ footer a:hover{
 
 .post-15 .container-team{
     position: relative;
-    Background-color:white;
     height: 450px;
     padding-top: 20px;
 }
@@ -316,16 +315,16 @@ footer a:hover{
 .post-15 .feuille{
     position: absolute;
     bottom: 0%; 
-    left: 80%;
-    z-index: 1;
-    width: 230px;
+    left: 70%;
+    z-index: 0;
+    width: 192px;
 }
 
 .post-15 .container-acf{
     display:flex;
-    justify-content: space-evenly;
+    justify-content: space-between;
     margin: 0px;
-    width: 900px;
+    width: 768px;
 }
 
 /* form nous-rencontrer */
@@ -579,4 +578,78 @@ footer a:hover{
 
 /* Medium devices (tablets, less/equal than 1024px) */
 
+@media (max-width: 1024px) {
+    header #menu a{
+        max-width: 100px;
+        padding: 5px
+    }
+
+}
+
 /* Small devices (phones, less than 768px) */
+
+@media (max-width: 767px) {
+    
+
+    .logo{
+        display: flex;
+        flex-direction: row;
+        margin: 20px;
+    }
+
+    .has-xl-font-size{
+        font-size: 20px!important;
+    }
+
+    h3, .has-large-font-size{
+        font-size: 18px!important;
+    }
+
+    .acf__gouts {
+        width: 320px;
+    }
+
+    .acf__gouts img{
+        width: 320px;
+        height: 240px;
+    }
+
+    .acf__gouts-txt {
+        font-size: 26px;
+        padding: 15px;
+    }
+
+    .acf__temoignage {
+        max-width: 300px;
+    }
+}
+
+/* Super Small devices (phones, less than 540px) */
+
+@media (max-width: 539px) {
+    header{
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-content: center;
+        height: fit-content;
+    }
+
+    header #menu li{
+        width: 30%;
+        margin: 0px;
+        padding: 0px;
+    }
+
+    header #menu a{
+        width: 100%;
+        height: 40px;
+    }
+
+    nav{
+        display:flex;
+        flex-direction: row;
+        justify-content: space-between!important;
+        width: 100%;
+    }
+}
