@@ -14,8 +14,13 @@ body{
    margin: 0;
    display: flex;
    flex-direction: column;
-   width: 100%;
-   box-sizing: border-box;
+   justify-content: center;
+   align-items: center;
+}
+
+#container {
+    max-width: 1440px;
+    width: 100%;
 }
 
 /* Header */
@@ -30,6 +35,7 @@ header{
     margin: 0;
     background: white;
     width: 100%;
+    max-width: 1440px;
 }
 
 ul, li{
@@ -101,6 +107,8 @@ footer{
     align-items: center;
     height: 60px;
     background: white;
+    max-width: 1440px;
+    width: 100%;
 }
 
 footer a{
@@ -222,7 +230,7 @@ footer a:hover{
     border-radius: 0 0 60% 60%;
   }
 
-  .post-13 .button a{
+.post-13 .button a{
     display: flex;
     justify-content: center;
     align-content: center;
@@ -243,6 +251,12 @@ footer a:hover{
     padding-bottom: 80px;
 }
 
+.post-13 .temoignage{
+    display: flex;
+    max-width: 1440px;
+    justify-content: center;
+}
+
 /* backgroung canette */
 
 .canette {
@@ -258,14 +272,6 @@ footer a:hover{
 }
 
 /* nous rencontrer */
-
-.post-15{
-    display: flex;
-    flex-direction: column;
-    justify-content: center;
-    flex-wrap: wrap;
-    width: 100%;
-}
 
 .post-15 .container-hero{
     display: flex;
@@ -312,6 +318,7 @@ footer a:hover{
     bottom: 0%; 
     left: 80%;
     z-index: 1;
+    width: 230px;
 }
 
 .post-15 .container-acf{
@@ -326,9 +333,10 @@ footer a:hover{
 .post-15 .feuille2{
     position: relative;
     top: -250px; 
-    left: 31%;
+    right: 180px;
     z-index: 1;
     height: 0px;
+    width: 185px;
 }
 
 .post-15 .form-contact{
@@ -566,3 +574,9 @@ footer a:hover{
     font-weight: 400;
     margin-top: 44px;
 }
+
+/* Responsive */
+
+/* Medium devices (tablets, less/equal than 1024px) */
+
+/* Small devices (phones, less than 768px) */
