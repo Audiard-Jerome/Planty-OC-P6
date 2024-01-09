@@ -19,7 +19,7 @@ body{
 }
 
 #container {
-    max-width: 1440px;
+    max-width: 1920px;
     width: 100%;
 }
 
@@ -35,16 +35,20 @@ header{
     margin: 0;
     background: white;
     width: 100%;
-    max-width: 1440px;
+    max-width: 1920px;
 }
 
 ul, li{
     list-style-type: none;
+    width: 33%;
+    max-width: 236px;
   }
 
 nav {
     display: flex;
     flex-direction: row;
+    width: 66%;
+    justify-content: flex-end;
 }
 
 nav :nth-child(2){ 
@@ -55,7 +59,7 @@ header #menu a{
     display: flex;
     justify-content: center;
     align-items: center;
-    width: 236px;
+    max-width: 236px;
     height: 80px;
     background: white;
     text-decoration: none;
@@ -106,7 +110,7 @@ footer{
     align-items: center;
     height: 60px;
     background: white;
-    max-width: 1440px;
+    max-width: 1920px;
     width: 100%;
 }
 
@@ -427,16 +431,13 @@ footer a:hover{
 
 .post-17 h2{
     max-width: 860px;
+    width: 100%;
     padding-top: 70px;
     padding-bottom: 70px;
-    border-bottom: 1px solid white;
 }
 
 .post-17 h3{
-    max-width: 860px;
-    padding-top: 40px;
-    padding-bottom: 40px;
-    padding-left: 0px;
+    padding: 40px 0px 40px 0px;
     color: #FFF;
     font-family: Syne;
     font-size: 30px;
@@ -445,22 +446,26 @@ footer a:hover{
     line-height: normal;
 }
 
-.post-17 .container-img{
+.post-17 .container-gouts{
     display: flex;
     justify-content: space-between;
+    flex-wrap: nowrap;
     max-width: 860px;
+}
+
+.post-17 .container-form{
+    max-width: 860px;
+    width: auto;
+    margin: 15px;
+    border-top: 1px solid white;
 }
 
 /* form commander */
 
 .form-commander{
-    width: 860px;
+    max-width: 860px;
+    width: 100%;
     padding-bottom: 100px;
-}
-
-.form-commander p{
-    margin:0px;
-    padding:0px;
 }
 
 .form-commander .container-quantity{
@@ -472,12 +477,19 @@ footer a:hover{
 .form-commander .container-quantity p{
     display: flex;
     justify-content: center;
+    align-items: center;
     width: 100%;
 }
 
 .form-commander .container-quantity .quantity{
-    width: 192px;
+    max-width: 192px;
+    width: 100%;
 }
+
+.form-commander .container-quantity label{
+    display:none;
+}
+
 
 .form-commander .container-quantity input{
     display: flex;
@@ -567,14 +579,29 @@ footer a:hover{
 
 /* Responsive */
 
-/* tablets XL, (less than 1024px) */
+/* tablets, (less than 860px) */
 
-@media (max-width: 1024px) {
-    header #menu a{
+@media (max-width: 860px) {
+    /*header #menu a{
         max-width: 100px;
         padding: 5px
+    }*/
+
+    .acf__gouts-petit img{
+        width: 100%;
     }
 
+    .acf__gouts-petit {
+        width: 22%;
+    }
+
+    .form-commander .container-quantity .quantity{
+        width: 22%;
+    }
+
+    .acf__gouts-petit-txt {
+        font-size: 14px;
+    }
 }
 
 /* Tablets (less than 768px) */
@@ -621,11 +648,39 @@ footer a:hover{
     .post-15 .container-acf{
         justify-content: space-evenly;
     }
+
+    .post-17 h2{
+        padding-top: 30px;
+        padding-bottom: 30px;
+    } 
+
+    .post-17 h3{
+        padding-top: 20px;
+        padding-bottom: 20px;
+    } 
+
+    .post-17 .form-txt{
+        margin-top: 20px;
+    }
+
+    .post-17 .information{
+        padding-right: 20px;
+    }
+    
+    .post-17 .livraison{
+        padding-left: 20px;
+    }
+
+    .form-commander{
+        padding-bottom: 30px!important;
+    }
+    
+
 }
 
 /* Mobil L (phones, less than 540px) */
 
-@media (max-width: 539px) {
+@media (max-width: 540px) {
 
     header{
         display: flex;
@@ -645,6 +700,7 @@ footer a:hover{
         width: 100%;
         max-width: 200px;
         height: 40px;
+        padding: 10px;
     }
 
     nav{
@@ -661,6 +717,50 @@ footer a:hover{
     .post-15 .container-hero h2{
         padding-top: 50px;
     }
+
+    .post-17 .container-gouts{
+        display: none;
+    }
+
+    .form-commander .container-quantity label{
+        display:flex;
+    }
+    
+    .post-17 .container-quantity{
+        flex-direction: column;
+    }
+
+    .form-commander .container-quantity .quantity{
+        display: flex;
+        flex-direction: row;
+        width: 100%;
+        max-width: 500px;
+    }
+
+    .form-commander .quantity p{
+        display: flex;
+        justify-content: space-between;
+    }
+
+    .form-commander .container-quantity input{
+        margin:10px;
+    }
+
+    .post-17 .form-txt{
+        flex-direction: column;
+    }
+
+    .post-17 .information{
+        width: 100%;
+        padding-right: 0px;
+        border-right: 0px;
+    }
+
+    .post-17 .livraison{
+        width: 100%;
+        padding-left: 0px;
+    }
+
 }
 
 /* Mobil L (phones, less than 425px) */
@@ -679,4 +779,7 @@ footer a:hover{
         width: 300px;
     }
 
+    h2{
+        padding: 20px!important;
+    }
 }
