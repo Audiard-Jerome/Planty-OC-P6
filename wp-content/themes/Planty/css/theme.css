@@ -57,7 +57,6 @@ header #menu a{
     align-items: center;
     width: 236px;
     height: 80px;
-    flex-shrink: 0;
     background: white;
     text-decoration: none;
     color: black;
@@ -192,9 +191,8 @@ footer a:hover{
     display: flex;
     flex-direction: row;
     flex-wrap: wrap;
-    justify-content: center;
-    align-content: center;
-    gap: 30px;
+    justify-content: space-around;
+    align-content: space-around;
     max-width: 850px!important;
 }
 
@@ -211,7 +209,6 @@ footer a:hover{
     padding: 9px 57px 9px 56px;
     justify-content: center;
     align-items: center;
-    flex-shrink: 0;
     border-radius: 5px;
     background: #E0B9B4;
     color: #FFF;
@@ -260,7 +257,7 @@ footer a:hover{
 /* backgroung canette */
 
 .canette {
-    background-image: url(http://planty.local/wp-content/uploads/2023/12/Group-8-e1704024441847.png);
+    background-image: url(/wp-content/uploads/2023/12/Group-8-e1704024441847.png);
     background-repeat: repeat-x;
     height: 161px;
     background-color: white;
@@ -303,12 +300,12 @@ footer a:hover{
     height:100px;
     width:100%;
     background-color: var(--color-pink-bg);
-    border-radius: 0 0 80% 40%;
+    border-radius: 0 0 80% 80%;
   }
 
 .post-15 .container-team{
     position: relative;
-    height: 450px;
+    min-height: 450px;
     padding-top: 20px;
 }
 
@@ -324,7 +321,7 @@ footer a:hover{
     display:flex;
     justify-content: space-between;
     margin: 0px;
-    width: 768px;
+    max-width: 768px;
 }
 
 /* form nous-rencontrer */
@@ -348,7 +345,6 @@ footer a:hover{
 .post-15 .your-name,.your-email{
     width: 383px;
     height: 71px;
-    flex-shrink: 0;
     border: 0px;
     border-radius: 7px!important;
     background: #FFF;
@@ -359,7 +355,6 @@ footer a:hover{
 .post-15 .your-message{
     width: 383px;
     height: 237px;
-    flex-shrink: 0;
     border: 0px;
     border-radius: 7px!important;
     background: #FFF;
@@ -407,7 +402,6 @@ footer a:hover{
     padding: 9px 0px;
     justify-content: center;
     align-items: center;
-    flex-shrink: 0;
     border-radius: 5px!important;
     border: 0px;
     background: #E0B9B4;
@@ -460,7 +454,7 @@ footer a:hover{
 /* form commander */
 
 .form-commander{
-    max-width: 860px;
+    width: 860px;
     padding-bottom: 100px;
 }
 
@@ -490,7 +484,6 @@ footer a:hover{
     justify-content: center;
     width: 39px;
     height: 56px;
-    flex-shrink: 0;
     color: #000;
     font-size: 16px;
     font-style: normal;
@@ -536,7 +529,6 @@ footer a:hover{
 .form-commander .form-txt input{
     width: 100%;
     height: 71px;
-    flex-shrink: 0;
     border-radius: 7px;
     background: #FFF;
     box-shadow: 0px 4px 14px 0px rgba(0, 0, 0, 0.04);
@@ -561,7 +553,6 @@ footer a:hover{
     padding: 9px 57px 9px 56px;
     justify-content: center;
     align-items: center;
-    flex-shrink: 0;
     border-radius: 5px;
     border: 0px;
     background: #E0B9B4;
@@ -576,7 +567,7 @@ footer a:hover{
 
 /* Responsive */
 
-/* Medium devices (tablets, less/equal than 1024px) */
+/* tablets XL, (less than 1024px) */
 
 @media (max-width: 1024px) {
     header #menu a{
@@ -586,9 +577,9 @@ footer a:hover{
 
 }
 
-/* Small devices (phones, less than 768px) */
+/* Tablets (less than 768px) */
 
-@media (max-width: 767px) {
+@media (max-width: 768px) {
     
 
     .logo{
@@ -622,11 +613,20 @@ footer a:hover{
     .acf__temoignage {
         max-width: 300px;
     }
+
+    .post-15 .feuille{
+        display:none;
+    }
+
+    .post-15 .container-acf{
+        justify-content: space-evenly;
+    }
 }
 
-/* Super Small devices (phones, less than 540px) */
+/* Mobil L (phones, less than 540px) */
 
 @media (max-width: 539px) {
+
     header{
         display: flex;
         flex-direction: column;
@@ -643,13 +643,40 @@ footer a:hover{
 
     header #menu a{
         width: 100%;
+        max-width: 200px;
         height: 40px;
     }
 
     nav{
         display:flex;
         flex-direction: row;
-        justify-content: space-between!important;
+        justify-content: space-between;
         width: 100%;
     }
+
+    .fleur{
+        display: none;
+    }
+
+    .post-15 .container-hero h2{
+        padding-top: 50px;
+    }
+}
+
+/* Mobil L (phones, less than 425px) */
+
+@media (max-width: 425px) {
+
+    .feuille2{
+        display: none;
+    }
+
+    .post-15 .your-name,.your-email{
+        width: 300px;
+    }
+
+    .post-15 .your-message{
+        width: 300px;
+    }
+
 }
