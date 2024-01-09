@@ -339,6 +339,10 @@ footer a:hover{
     width: 185px;
 }
 
+.post-15 .wpcf7{
+    max-width: 427px;
+}
+
 .post-15 .form-contact{
     display: flex;
     flex-direction: row;
@@ -382,6 +386,20 @@ footer a:hover{
 
 .post-15 .form-contact p{
     margin:22px;
+    font-size: 20px;
+}
+
+.post-15 .form-contact input{
+    padding-left: 13px;
+    font-family: Syne;
+    font-size: 20px;
+}
+
+.post-15 .form-contact textarea{
+    padding-left: 13px;
+    padding-top: 13px;
+    font-family: Syne;
+    font-size: 20px;
 }
 
 .post-15 .btn-envoyer{
@@ -505,6 +523,7 @@ footer a:hover{
     text-align: center;
     margin-top:16px;
     margin-bottom: 39px;
+    font-family: Syne;
 }
 
 .form-commander .form-txt{
@@ -547,6 +566,9 @@ footer a:hover{
     border: 0px;
     margin-top: 13px;
     margin-bottom: 30px;
+    padding-left: 13px;
+    font-family: Syne;
+    font-size: 20px;
 }
 
 .form-commander .form-txt .no-margin{
@@ -772,14 +794,18 @@ footer a:hover{
     }
 
     .post-15 .your-name,.your-email{
-        width: 300px;
+        width: 100%;
     }
 
     .post-15 .your-message{
-        width: 300px;
+        width: 100%;
     }
 
     h2{
         padding: 20px!important;
+    }
+
+    .post-15 .wpcf7{
+        max-width: 300px;
     }
 }
