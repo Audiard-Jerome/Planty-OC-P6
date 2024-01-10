@@ -1,6 +1,6 @@
 .acf__gouts-petit {
     position: relative;
-    width: 192px;
+    max-width: 192px;
     height:128px;
 }
 
@@ -19,6 +19,5 @@
     line-height: normal;
     text-transform: uppercase;
     overflow-wrap: break-word;
-    max-width: 142px;
+    max-width: 85%;
 }
-
