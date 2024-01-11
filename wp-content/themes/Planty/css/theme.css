@@ -204,6 +204,7 @@ footer a:hover{
     justify-content: space-around;
     align-content: space-around;
     max-width: 850px!important;
+    width: 100%;
 }
 
 .post-13 .container-button{
@@ -520,7 +521,6 @@ footer a:hover{
     display:none;
 }
 
-
 .form-commander .container-quantity input{
     display: flex;
     justify-content: center;
@@ -620,22 +620,6 @@ footer a:hover{
 /* tablets, (less than 860px) */
 
 @media (max-width: 860px) {
-    /*header #menu a{
-        max-width: 100px;
-        padding: 5px
-    }*/
-
-    .acf__gouts-petit img{
-        width: 100%;
-    }
-
-    .acf__gouts-petit {
-        width: 22%;
-    }
-
-    .form-commander .container-quantity .quantity{
-        width: 22%;
-    }
 
     .acf__gouts-petit-txt {
         font-size: 14px;
@@ -646,7 +630,6 @@ footer a:hover{
 
 @media (max-width: 768px) {
     
-
     .logo{
         display: flex;
         flex-direction: row;
@@ -659,24 +642,6 @@ footer a:hover{
 
     h3, .has-large-font-size{
         font-size: 18px!important;
-    }
-
-    .acf__gouts {
-        width: 320px;
-    }
-
-    .acf__gouts img{
-        width: 320px;
-        height: 240px;
-    }
-
-    .acf__gouts-txt {
-        font-size: 26px;
-        padding: 15px;
-    }
-
-    .acf__temoignage {
-        max-width: 300px;
     }
 
     .post-15 .feuille{
@@ -799,6 +764,10 @@ footer a:hover{
 
     .feuille2{
         display: none;
+    }
+
+    .acf__gouts-txt{
+        font-size: 32px;
     }
 
 }
