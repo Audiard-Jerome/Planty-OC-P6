@@ -1,6 +1,6 @@
 .acf__gouts {
     position: relative;
-    width: 393px;
+    max-width: 393px;
     height: 262px;
     margin: 20px!important;
 }
@@ -18,7 +18,11 @@
     font-weight: 800;
     line-height: normal;
     text-transform: uppercase;
-    max-width: 350px;
+    max-width: 87%;
     overflow-wrap: break-word;
+}
+
+.acf__gouts img{
+    width: 100%;
 }
 

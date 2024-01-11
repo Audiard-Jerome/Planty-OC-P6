@@ -21,3 +21,7 @@
     overflow-wrap: break-word;
     max-width: 85%;
 }
+
+.acf__gouts-petit img{
+    width: 100%;
+}
