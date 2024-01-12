@@ -6,9 +6,8 @@
 				'theme_location' => 'footer_menu',
                 "menu-class" => 'menu-footer',
                 'container'  => false,
-                'items_wrap' => ' %3$s',
                     ]); 
 ?>
-</div>
+</footer>
 </body>
 </html>
