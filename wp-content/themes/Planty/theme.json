@@ -81,7 +81,7 @@
                "fontFamily": "syne",
                "fontStretch": "normal",
                "fontStyle": "normal",
-               "fontWeight": "400 500 600 700 800",
+               "fontWeight": "400 800",
                "src": [
                    "file:./assets/font/Syne-VariableFont_wght.ttf"
                ]

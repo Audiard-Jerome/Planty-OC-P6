@@ -19,11 +19,9 @@
 							    'theme_location' => 'header_menu',
                                 "menu-class" => 'menu-item',
                                 'container'  => false,
-                                'items_wrap' => ' %3$s',
                                 ]); 
                             ?>
-                            </nav>
-                    </div>
+                        </nav>
                 </header>
             <div id="container">
             <main id="content" role="main">
