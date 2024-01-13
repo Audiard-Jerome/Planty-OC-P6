@@ -193,7 +193,7 @@ footer a:hover{
     background-color: var(--color-pink-bg);
 }
 
-.post-13 .container-gouts h3{
+.post-13 .container-gouts h2{
     padding-top:60px;
     padding-bottom: 10px;
 }
@@ -259,7 +259,7 @@ footer a:hover{
     padding-bottom: 80px;
 }
 
-.post-13 .container-testimonial h3{
+.post-13 .container-testimonial h2{
     padding-top:100px;
     padding-bottom: 80px;
 }
@@ -309,7 +309,7 @@ footer a:hover{
     max-width: 700px;
 }
 
-.post-15 .container-hero h2{
+.post-15 .container-hero h1{
     padding-top: 186px;
     z-index: 1;
 }
@@ -388,7 +388,7 @@ footer a:hover{
     position:sticky;
 }
 
-.post-15 .form-contact h3{
+.post-15 .form-contact h2{
     color: #000;
     text-align: center;
     font-family: Syne;
@@ -467,14 +467,14 @@ footer a:hover{
     background-color: var(--color-green);
 }
 
-.post-17 h2{
+.post-17 h1{
     max-width: 860px;
     width: 100%;
     padding-top: 70px;
     padding-bottom: 70px;
 }
 
-.post-17 h3{
+.post-17 h2{
     padding: 40px 0px 40px 0px;
     color: #FFF;
     font-family: Syne;
@@ -562,7 +562,7 @@ footer a:hover{
     padding-left: 50px;
 }
 
-.form-commander h3{
+.form-commander h2{
     padding-top: 0px;
     padding-bottom: 30px;
 }
@@ -672,7 +672,7 @@ footer a:hover{
         overflow-wrap: normal;
     }
 
-    h3, .has-large-font-size{
+    h2 .has-large-font-size{
         font-size: 18px!important;
     }
 
@@ -680,12 +680,12 @@ footer a:hover{
         justify-content: space-evenly;
     }
 
-    .post-17 h2{
+    .post-17 h1{
         padding-top: 30px;
         padding-bottom: 30px;
     } 
 
-    .post-17 h3{
+    .post-17 h2{
         padding-top: 20px;
         padding-bottom: 20px;
     } 
@@ -740,7 +740,7 @@ footer a:hover{
         display: none;
     }
 
-    .post-15 .container-hero h2{
+    .post-15 .container-hero h1{
         padding-top: 50px;
     }
 
@@ -801,7 +801,7 @@ footer a:hover{
         font-size: 32px;
     }
 
-    h2.has-background{
+    h1.has-background{
         padding: 1em;
     }
 }
